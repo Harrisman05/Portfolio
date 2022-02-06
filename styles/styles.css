@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,9 +9,19 @@ body {
 }
 
 section {
-  height: 500px;
   background-color: white;
   border: solid black 1px;
+}
+
+.subtext {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.projectSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero {
@@ -27,10 +37,14 @@ nav {
 }
 
 ul {
-  width: 500px;
+  width: 400px;
   display: flex;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+ul.show {
+  display: block;
 }
 
 li {
@@ -41,21 +55,23 @@ li {
 footer {
   height: 500px;
   background-color: black;
-  border: white 1px solid;
+  color: white;
+  border: black 1px solid;
+  text-align: center;
+  padding: 80px;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   margin: 0;
 }
 
-p {
-  margin: 0;
+h2 {
+  font-size: 50px;
 }
 
-.heroText {
-  margin-left: 40px;
-  margin-bottom: 200px;
+.homepageSubText {
+  font-size: 40px;
 }
 
 .heroArea {
@@ -63,40 +79,63 @@ p {
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+}
+
+.heroText {
+  margin-left: 40px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.txt-type > .txt {
+  border-right: 0.1rem solid rgb(255, 94, 0);
+  color: rgb(255, 94, 0);
+}
+
+.webDevImg {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  bottom: 10%;
+  left: 5%;
+}
+
+.labImg {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  bottom: 10%;
+}
+
+@media only screen and (max-width: 1357px) {
+  .heroArea {
+    flex-wrap: wrap;
+  }
+
+  .heroText {
+    flex: 1 0 100%;
+  }
 }
 
 .socials {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   margin-right: 20px;
   background-color: #aeb2db;
   color: #12152e;
   border-radius: 10px;
   padding: 10px;
-}
-
-.button {
-  width: 200px;
-  height: 60px;
-  background-color: coral;
-  border-radius: 40px;
-  text-align: center;
-  padding-top: 4px;
-  font-size: 35px;
-}
-
-.button:hover {
-  background-color: rgb(228, 160, 135);
-  cursor: pointer;
-}
-
-.button:active {
-  background-color: rgb(190, 190, 190);
-  color: rgb(47, 47, 165);
+  width: 90px;
+  position: absolute;
+  right: 0;
 }
 
 .logo {
   color: rgb(255, 94, 0);
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Courgette", cursive;
   margin-left: 20px;
 }
@@ -113,3 +152,73 @@ p {
 .linkedinIcon:hover {
   fill: #7c0d0d;
 }
+
+.aboutMe {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.ppImage {
+  border-radius: 60px;
+  width: 200px;
+}
+
+.aboutMeText {
+  font-size: 20px;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* responsiveness for project cards */
+
+@media only screen and (max-width: 1000px) {
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.projectCard {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px grey;
+  margin: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #12152e;
+}
+
+.project-link:hover {
+  color: #7c0d0d;
+}
+
+.gitHubIconProjects {
+  width: 20%;
+  color: #000;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+/* Heading cursor */
