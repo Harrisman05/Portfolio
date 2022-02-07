@@ -97,40 +97,86 @@ h2 {
 }
 
 .webDevImg {
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
   position: relative;
   bottom: 10%;
-  left: 5%;
+  left: 8%;
 }
 
 .labImg {
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
   position: relative;
   bottom: 10%;
 }
 
-@media only screen and (max-width: 1357px) {
+.socials {
+  margin-bottom: 200px;
+  margin-right: 1vw;
+  background-color: #aeb2db;
+  color: #12152e;
+  border-radius: 10px;
+  padding: 0.4vw;
+  width: clamp(70px, 5vw, 5vw);
+  position: absolute;
+  right: 0;
+}
+
+.icons {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
   .heroArea {
     flex-wrap: wrap;
   }
 
   .heroText {
     flex: 1 0 100%;
+    text-align: center;
+    position: relative;
+    top: 5%;
+  }
+
+  .webDevImg {
+    bottom: 10%;
+  }
+
+  .labImg {
+    bottom: 10%;
   }
 }
 
-.socials {
-  margin-bottom: 200px;
-  margin-right: 20px;
-  background-color: #aeb2db;
-  color: #12152e;
-  border-radius: 10px;
-  padding: 10px;
-  width: 90px;
-  position: absolute;
-  right: 0;
+@media only screen and (max-width: 500px) {
+  .webDevImg {
+    display: none;
+  }
+
+  .labImg {
+    display: none;
+  }
+
+  .heroArea {
+    flex-wrap: wrap;
+  }
+
+  .socials {
+    top: 2.5%;
+    right: 42%;
+    display: flex;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .webDevImg {
+    display: none;
+  }
+
+  .labImg {
+    display: none;
+  }
 }
 
 .logo {
@@ -214,6 +260,7 @@ h2 {
     background-color: transparent;
     color: white;
     font-size: 30px;
+    margin-right: 5vw;
   }
 
   ul {
