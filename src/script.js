@@ -119,3 +119,45 @@ faders.forEach((fader) => {
 sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
+
+// prevent default for form, using AJAX boilerplate code https://formspree.io/forms/moqrezzv/integration
+
+var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  status.innerHTML = ""; // prevent text from lingering
+  status.classList.remove("success"); //remove class each time event listener is triggered so it works
+  status.classList.remove("error"); //remove class each time event listener is triggered so it works
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        status.classList.add("success");
+        status.innerHTML = "Thanks for your submission!";
+        form.reset();
+      } else {
+        status.classList.add("error");
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            status.innerHTML = data["errors"]
+              .map((error) => error["message"])
+              .join(", ");
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      status.innerHTML = "Oops! There was a problem submitting your form";
+    });
+}
+form.addEventListener("submit", handleSubmit);
