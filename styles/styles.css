@@ -140,11 +140,13 @@ h2 {
   }
 
   .webDevImg {
-    bottom: 10%;
+    bottom: 15%;
+    /* bottom: 10%; */
   }
 
   .labImg {
-    bottom: 10%;
+    bottom: 15%;
+    /* bottom: 10%; */
   }
 }
 
@@ -203,6 +205,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  /* background-color: #282c34; */
 }
 
 .ppImage {
@@ -331,7 +334,7 @@ h2 {
   height: 6px;
   background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
   background-size: contain;
-  /* transition: transform 0.4s; */
+  transition: transform 0.6s;
 }
 
 .accordion_content {
@@ -395,6 +398,11 @@ h2 {
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  border: 3px solid transparent;
+}
+
+.timeline ul li:hover {
+  border: 3px aqua solid;
 }
 
 .timeline ul li:last-child {
@@ -462,11 +470,11 @@ h2 {
   }
 
   .timeline ul li:nth-child(odd)::after {
-    right: -30px;
+    right: -33px;
     transform: translate(50%, -50%);
   }
   .timeline ul li:nth-child(even)::after {
-    left: -30px;
+    left: -33px;
     transform: translate(-50%, -50%);
   }
 
@@ -477,8 +485,9 @@ h2 {
   .timelineContent .date {
     position: absolute;
     top: -20px;
-    color: black;
-    font-weight: 800;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 2px;
   }
 
   .from-left {
