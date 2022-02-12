@@ -229,14 +229,16 @@ h2 {
 }
 #slider figure {
   position: relative;
-  width: 500%;
+  width: 400%;
   margin: 0;
   left: 0;
-  animation: 20s slider infinite;
+  animation: 40s slider infinite;
 }
 #slider figure img {
   float: left;
-  width: 20%;
+  width: 25%;
+  height: 280px;
+  transform: scale(0.9);
 }
 
 @keyframes slider {
@@ -265,7 +267,7 @@ h2 {
     left: -300%;
   }
   100% {
-    left: -400%;
+    left: -300%;
   }
 }
 
@@ -283,6 +285,10 @@ h2 {
   min-height: 500px;
   box-shadow: 5px 5px 20px grey;
   margin: 20px;
+}
+
+.projectCard h3 {
+  font-size: 20px;
 }
 
 .project-link {
@@ -525,10 +531,12 @@ h2 {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  background-color: rgb(26, 28, 46);
 }
 
 .contactMeTitle {
   margin-bottom: 30px;
+  color: rgb(255, 94, 0);
 }
 
 .formContainer {
@@ -536,7 +544,7 @@ h2 {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0px 0px 20px;
+  box-shadow: 0px 0px 20px rgb(255, 94, 0);
   border-radius: 8px;
   margin-bottom: 20px;
 }
