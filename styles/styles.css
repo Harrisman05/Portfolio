@@ -302,7 +302,7 @@ hr {
   min-height: 500px;
   box-shadow: 5px 5px 20px grey;
   margin: 20px;
-  background-color: rgb(236, 239, 243);
+  background-color: #eff5ff;
 }
 
 .projectCard h3 {
@@ -328,13 +328,19 @@ hr {
   display: none;
 }
 
+.projectOverview {
+  padding: 0 20px 0 20px;
+  margin-bottom: 10px;
+}
+
 .accordion {
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   /* overflow: hidden; */
-  background-color: #f0f6ff;
+  background-color: #eff5ff;
   text-align: left;
+  margin-top: 5px;
 }
 
 .accordion_label {
@@ -365,10 +371,17 @@ hr {
 
 .accordion_content {
   padding: 14px 20px;
-  background-color: rgb(255, 233, 233);
+  background-color: rgb(234, 255, 247);
   line-height: 1.6;
   font-size: 13.5;
   display: none;
+}
+
+.languageIcons {
+  /* width: 17%;
+  height: 17%; */
+  width: 40px;
+  height: 40px;
 }
 
 .accordion_input {
@@ -376,7 +389,37 @@ hr {
 }
 
 .accordion_input:checked ~ .accordion_content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.accordion_input:checked ~ .accordion_content .languages_description {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.accordion_input:checked ~ .accordion_content .languages_header {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion_input:checked ~ .accordion_content .languages_description > span,
+p {
+  position: relative;
+  top: 10px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.accordion_input:checked ~ #guessWhoLanguageAccordion {
+  padding: 5px 20px 20px 20px;
+  gap: 0.5rem;
+}
+
+.accordion_input:checked ~ #guessWhoLanguageAccordion h3 {
+  margin: 0;
 }
 
 .accordion_input:checked ~ .accordion_label {
@@ -450,7 +493,6 @@ hr {
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
-  margin-bottom: 10px;
 }
 
 .timeline-content p {
@@ -462,7 +504,6 @@ hr {
 .timelineContent .date {
   font-size: 13px;
   font-weight: 800;
-  margin-bottom: 10px;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -542,35 +583,13 @@ hr {
   }
 
   .timelineContent .date {
-    position: absolute;
-    top: -20px;
-    left: 100px;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
   }
 
   .timelineContent h1 {
-    margin: 15px 0 0 0;
     padding: 10px 0;
-  }
-
-  .from-left {
-    transform: translateX(-100%);
-  }
-
-  .from-right {
-    transform: translateX(100%);
-  }
-
-  .from-left,
-  .from-right {
-    transition: transform 500ms ease-in;
-  }
-
-  .from-left.appear,
-  .from-right.appear {
-    transform: translateX(0);
   }
 
   .fade-in {
