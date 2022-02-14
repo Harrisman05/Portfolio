@@ -232,6 +232,11 @@ hr {
   justify-content: space-around;
 }
 
+.project-link {
+  text-decoration: none;
+  color: #12152e;
+}
+
 .projectCard > p {
   padding-bottom: 10px;
   font-weight: 500;
@@ -239,6 +244,30 @@ hr {
 
 .projectCard > p > span {
   font-weight: 900;
+}
+
+.projectCardBottom {
+  position: relative;
+}
+
+.projectCardBottom .viewProjectText {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.svgIconAndLink {
+  position: relative;
+  left: 100px;
+  bottom: 15px;
+}
+
+.sourceCode {
+  position: relative;
+  left: 100px;
+  top: 60px;
+  font-size: 10px;
 }
 
 #slider {
@@ -310,11 +339,6 @@ hr {
   margin: 8px 0;
 }
 
-.project-link {
-  text-decoration: none;
-  color: #12152e;
-}
-
 .project-link:hover {
   color: #7c0d0d;
 }
@@ -330,7 +354,8 @@ hr {
 
 .projectOverview {
   padding: 0 20px 0 20px;
-  margin-bottom: 10px;
+  position: relative;
+  top: -5px;
 }
 
 .accordion {
@@ -341,6 +366,8 @@ hr {
   background-color: #eff5ff;
   text-align: left;
   margin-top: 5px;
+  position: relative;
+  top: -10px;
 }
 
 .accordion_label {
