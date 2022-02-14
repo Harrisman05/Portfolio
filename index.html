@@ -29,7 +29,8 @@
         <div class="logo">HH</div>
         <ul class="navItems">
           <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Coding Projects</a></li>
+          <li><a href="#employment-history">Employment History</a></li>
           <li><a href="#contact-me">Contact me</a></li>
         </ul>
         <button class="hamburger" id="hamburger">
@@ -93,14 +94,25 @@
       </div>
     </section>
     <section class="aboutMe" id="about-me">
-      <div class="information">
+      <div class="aboutMeText">
         <h2>About Me</h2>
-        <p class="aboutMeText">
+        <p>
           Hello. My name is Harley Harris. I am 25 years old with a passion for
           all things science and technology.
         </p>
+        <p>
+          I have been studying/working within STEM for the last 7 years and am
+          now exploring my passion for coding and creativity.
+        </p>
+        <p>
+          I am actively seeking opportunities to showcase my skillset and become
+          a junior developer.
+        </p>
+        <div class="profilePic" id="profilePicNarrow">
+          <img class="ppImage" src="/src/images/hhImage.jpg" alt="" />
+        </div>
       </div>
-      <div class="profilePic">
+      <div class="profilePic" id="profilePicWide">
         <img class="ppImage" src="/src/images/hhImage.jpg" alt="" />
       </div>
     </section>
@@ -113,43 +125,67 @@
           <hr />
           <div id="slider">
             <figure>
-              <img class="resize" src="images/spainMapImages/map.png">
-              <img class="resize" src="images/spainMapImages/overlayResize.png">
-              <img class="resize" src="images/spainMapImages/infoHub.png">
-              <img class="resize" src="images/spainMapImages/map.png">
+              <img class="resize" src="images/spainMapImages/map.png" />
+              <img
+                class="resize"
+                src="images/spainMapImages/overlayResize.png"
+              />
+              <img class="resize" src="images/spainMapImages/infoHub.png" />
+              <img class="resize" src="images/spainMapImages/map.png" />
             </figure>
           </div>
-          <p class="projectOverview"><span>Overview</span> - Navigate a fully dynamic map of Spain and discover the tourism of the regions/provinces.</p>
+          <p class="projectOverview">
+            <span>Overview</span> - Navigate a dynamic map of Spain and discover
+            the tourism of the regions/provinces.
+          </p>
           <div class="accordion">
-              <input
-                type="checkbox"
-                name="example_accordion"
-                id="card1.1"
-                class="accordion_input"
-              />
-              <label for="card1.1" class="accordion_label"> Languages/Frameworks Used </label>
-              <div class="accordion_content">
-                <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/html.svg" alt="">
-                  <span>-</span>
-                  <p>HTML5</p>
-                </div>
-                <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/css3.svg" alt="">
-                  <span>-</span>
-                  <p>CSS</p>
-                </div>
-                <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/javascript.svg" alt="">
-                  <span>-</span>
-                  <p>JavaScript</p>
-                </div>
-                <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/jquery.svg" alt="">
-                  <span>-</span>
-                  <p>jQuery</p>
-                </div>
+            <input
+              type="checkbox"
+              name="example_accordion"
+              id="card1.1"
+              class="accordion_input"
+            />
+            <label for="card1.1" class="accordion_label">
+              Languages/Frameworks Used
+            </label>
+            <div class="accordion_content">
+              <div class="languages_description">
+                <img
+                  class="languageIcons"
+                  src="/images/codingLanguagesImages/html.svg"
+                  alt=""
+                />
+                <span>-</span>
+                <p>HTML5</p>
               </div>
+              <div class="languages_description">
+                <img
+                  class="languageIcons"
+                  src="/images/codingLanguagesImages/css3.svg"
+                  alt=""
+                />
+                <span>-</span>
+                <p>CSS</p>
+              </div>
+              <div class="languages_description">
+                <img
+                  class="languageIcons"
+                  src="/images/codingLanguagesImages/javascript.svg"
+                  alt=""
+                />
+                <span>-</span>
+                <p>JavaScript</p>
+              </div>
+              <div class="languages_description">
+                <img
+                  class="languageIcons"
+                  src="/images/codingLanguagesImages/jquery.svg"
+                  alt=""
+                />
+                <span>-</span>
+                <p>jQuery</p>
+              </div>
+            </div>
           </div>
           <div class="accordion">
             <div>
@@ -159,15 +195,22 @@
                 id="card1.2"
                 class="accordion_input"
               />
-              <label for="card1.2" class="accordion_label"> Code Features </label>
+              <label for="card1.2" class="accordion_label">
+                Code Features
+              </label>
               <div class="accordion_content">
                 <p>
-                  Clean, flexible Javascript code written using jQuery to achieve the hover effects 
+                  Clean, flexible Javascript code written using jQuery to
+                  achieve the hover effects
                 </p>
                 <p>
-                  Organised datasets with all region/province data held in object datatypes 
+                  Organised datasets with all region/province data held in
+                  object datatypes
                 </p>
-                <p> Warm colour palette coded with CSS to provide a relaxing user experience</p>
+                <p>
+                  Warm colour palette coded with CSS to provide a relaxing user
+                  experience
+                </p>
               </div>
             </div>
           </div>
@@ -179,13 +222,22 @@
                 id="card1.3"
                 class="accordion_input"
               />
-              <label for="card1.3" class="accordion_label"> Technical Challenges </label>
+              <label for="card1.3" class="accordion_label">
+                Technical Challenges
+              </label>
               <div class="accordion_content">
-                <p>Learning how SVG images work and de-constructing/manipulating an open source blank svg of Spain</p>
-                <p> 
-                  Using colour matching/shader tools to create a well-contrasted and appealing colour palette for the map
+                <p>
+                  Learning how SVG images work and de-constructing/manipulating
+                  an open source blank svg of Spain
                 </p>
-                <p>Storing, organising and maintaining data for over 60 regions and provinces of Spain within JavaScript code</p>
+                <p>
+                  Using colour matching/shader tools to create a well-contrasted
+                  and appealing colour palette for the map
+                </p>
+                <p>
+                  Storing, organising and maintaining data for over 60 regions
+                  and provinces of Spain within JavaScript code
+                </p>
               </div>
             </div>
           </div>
@@ -194,7 +246,8 @@
             <p class="sourceCode">*source code</p>
             <a
               class="project-link svgIconAndLink"
-              href="https://github.com/Harrisman05/footballCareerHistoryWikiWebScrap"
+              target="_blank"
+              href="https://github.com/Harrisman05/Spain-Interactive-Map-Project"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +256,8 @@
               >
                 <path
                   d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                /></svg>
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -212,13 +266,18 @@
           <hr />
           <div id="slider">
             <figure>
-              <img  src="images/footballQuizImages/rulesModal.png">
-              <img  src="images/footballQuizImages/quizActiveAndSubmitResize.png">
-              <img  src="images/footballQuizImages/endGameTable.png">
-              <img  src="images/footballQuizImages/rulesModal.png">
+              <img src="images/footballQuizImages/rulesModal.png" />
+              <img
+                src="images/footballQuizImages/quizActiveAndSubmitResize.png"
+              />
+              <img src="images/footballQuizImages/endGameTable.png" />
+              <img src="images/footballQuizImages/rulesModal.png" />
             </figure>
           </div>
-          <p class="projectOverview"><span>Overview</span> - Play a football quiz game and guess the football player from the dataset provided.</p>
+          <p class="projectOverview">
+            <span>Overview</span> - A football quiz game which displays career
+            summaries of retired football players.
+          </p>
           <div class="accordion">
             <div>
               <input
@@ -227,18 +286,28 @@
                 id="card2.1"
                 class="accordion_input"
               />
-              <label for="card2.1" class="accordion_label"> Languages/Frameworks Used </label>
+              <label for="card2.1" class="accordion_label">
+                Languages/Frameworks Used
+              </label>
               <div class="accordion_content" id="guessWhoLanguageAccordion">
                 <div class="languages_header">
                   <h3>Backend</h3>
                 </div>
                 <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/NodeJS.svg" alt="">
+                  <img
+                    class="languageIcons"
+                    src="/images/codingLanguagesImages/NodeJS.svg"
+                    alt=""
+                  />
                   <span>-</span>
                   <p>Node.JS</p>
                 </div>
                 <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/pptrdev-official.svg" alt="">
+                  <img
+                    class="languageIcons"
+                    src="/images/codingLanguagesImages/pptrdev-official.svg"
+                    alt=""
+                  />
                   <span>-</span>
                   <p>Puppeteer API</p>
                 </div>
@@ -246,17 +315,29 @@
                   <h3>Frontend</h3>
                 </div>
                 <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/html.svg" alt="">
+                  <img
+                    class="languageIcons"
+                    src="/images/codingLanguagesImages/html.svg"
+                    alt=""
+                  />
                   <span>-</span>
                   <p>HTML5</p>
                 </div>
                 <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/css3.svg" alt="">
+                  <img
+                    class="languageIcons"
+                    src="/images/codingLanguagesImages/css3.svg"
+                    alt=""
+                  />
                   <span>-</span>
                   <p>CSS</p>
                 </div>
                 <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/javascript.svg" alt="">
+                  <img
+                    class="languageIcons"
+                    src="/images/codingLanguagesImages/javascript.svg"
+                    alt=""
+                  />
                   <span>-</span>
                   <p>JavaScript</p>
                 </div>
@@ -271,12 +352,18 @@
                 id="card2.2"
                 class="accordion_input"
               />
-              <label for="card2.2" class="accordion_label"> Code Features </label>
+              <label for="card2.2" class="accordion_label">
+                Code Features
+              </label>
               <div class="accordion_content">
                 <p>
-                  Asynchronous JavaScript - Async/Await required for Puppeteer functions and using dynamic module importing for the frontend 
+                  Asynchronous JavaScript - Async/Await required for Puppeteer
+                  functions and using dynamic module importing for the frontend
                 </p>
-                <p>Dataset manipulation with string / array methods / regular expressions</p>
+                <p>
+                  Dataset manipulation with string / array methods / regular
+                  expressions
+                </p>
                 <p>Dynamically generated HTML code</p>
               </div>
             </div>
@@ -289,14 +376,22 @@
                 id="card2.3"
                 class="accordion_input"
               />
-              <label for="card2.3" class="accordion_label"> Technical Challenges </label>
+              <label for="card2.3" class="accordion_label">
+                Technical Challenges
+              </label>
               <div class="accordion_content">
+                <p>Learning how to use Node.JS and NPM</p>
                 <p>
-                  Learning how to use Node.JS and NPM
+                  Coding the asynchronous function (using Pupeeteer) to automate
+                  extracting the player datasets
                 </p>
-                <p>Coding the asynchronous function (using Pupeeteer) to automate extracting the player datasets </p>
-                <p>Using File System module to write the datasets to separate files </p>
-                <p>Implementing a game loop using a countdown timer for each turn </p>
+                <p>
+                  Using File System module to write the datasets to separate
+                  files
+                </p>
+                <p>
+                  Implementing a game loop using a countdown timer for each turn
+                </p>
               </div>
             </div>
           </div>
@@ -305,6 +400,7 @@
             <p class="sourceCode">*source code</p>
             <a
               class="project-link svgIconAndLink"
+              target="_blank"
               href="https://github.com/Harrisman05/footballCareerHistoryWikiWebScrap"
             >
               <svg
@@ -314,7 +410,8 @@
               >
                 <path
                   d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                /></svg>
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -323,33 +420,50 @@
           <hr />
           <div id="slider">
             <figure>
-              <img src="images/shootoutPygameImages/shotOptionsPlaceholder2.jfif">
-              <img src="images/shootoutPygameImages/shotToCameraGif.GIF">
-              <img src="images/shootoutPygameImages/penThumbnail.jpg">
-              <img src="images/shootoutPygameImages/shotOptionsPlaceholder2.jfif">
+              <img
+                src="images/shootoutPygameImages/shotOptionsPlaceholder2.jfif"
+              />
+              <img src="images/shootoutPygameImages/shotToCameraGif.GIF" />
+              <img src="images/shootoutPygameImages/penThumbnail.jpg" />
+              <img
+                src="images/shootoutPygameImages/shotOptionsPlaceholder2.jfif"
+              />
             </figure>
           </div>
-          <p class="projectOverview"><span>Overview</span> - A penalty shootout simulator compiled into an executable browser game.</p>
+          <p class="projectOverview">
+            <span>Overview</span> - A penalty shootout simulator compiled into
+            an executable browser game.
+          </p>
           <div class="accordion">
-              <input
-                type="checkbox"
-                name="example_accordion"
-                id="card3.1"
-                class="accordion_input"
-              />
-              <label for="card3.1" class="accordion_label"> Languages/Frameworks Used </label>
-              <div class="accordion_content">
-                <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/python.svg" alt="">
-                  <span>-</span>
-                  <p>Python</p>
-                </div>
-                <div class="languages_description">
-                  <img class="languageIcons" src="/images/codingLanguagesImages/pygame.png" alt="">
-                  <span>-</span>
-                  <p>Pygame (module)</p>
-                </div>
+            <input
+              type="checkbox"
+              name="example_accordion"
+              id="card3.1"
+              class="accordion_input"
+            />
+            <label for="card3.1" class="accordion_label">
+              Languages/Frameworks Used
+            </label>
+            <div class="accordion_content">
+              <div class="languages_description">
+                <img
+                  class="languageIcons"
+                  src="/images/codingLanguagesImages/python.svg"
+                  alt=""
+                />
+                <span>-</span>
+                <p>Python</p>
               </div>
+              <div class="languages_description">
+                <img
+                  class="languageIcons"
+                  src="/images/codingLanguagesImages/pygame.png"
+                  alt=""
+                />
+                <span>-</span>
+                <p>Pygame (module)</p>
+              </div>
+            </div>
           </div>
           <div class="accordion">
             <div>
@@ -359,14 +473,12 @@
                 id="card3.2"
                 class="accordion_input"
               />
-              <label for="card3.2" class="accordion_label"> Code Features </label>
+              <label for="card3.2" class="accordion_label">
+                Code Features
+              </label>
               <div class="accordion_content">
-                <p>
-                  Object Orientation
-                </p>
-                <p>
-                  Complex control flow
-                </p>
+                <p>Object Orientation</p>
+                <p>Complex control flow</p>
                 <p>Importing custom assets and external modules</p>
               </div>
             </div>
@@ -379,13 +491,16 @@
                 id="card3.3"
                 class="accordion_input"
               />
-              <label for="card3.3" class="accordion_label"> Technical Challenges </label>
+              <label for="card3.3" class="accordion_label">
+                Technical Challenges
+              </label>
               <div class="accordion_content">
-                <p>
-                  Ensure that game logic outcomes present the correct gifs 
-                </p>
+                <p>Ensure that game logic outcomes present the correct gifs</p>
                 <p>Flexibly coding the game to cater for multiple game modes</p>
-                <p>Importing a user-created library to add functionality that pygame natively lacks </p>
+                <p>
+                  Importing a user-created library to add functionality that
+                  pygame natively lacks
+                </p>
               </div>
             </div>
           </div>
@@ -394,7 +509,8 @@
             <p class="sourceCode">*source code</p>
             <a
               class="project-link svgIconAndLink"
-              href="https://github.com/Harrisman05/footballCareerHistoryWikiWebScrap"
+              target="_blank"
+              href="https://github.com/Harrisman05/Shootout_Testing"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -403,12 +519,14 @@
               >
                 <path
                   d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                /></svg>
+                />
+              </svg>
             </a>
           </div>
         </div>
+      </div>
     </section>
-    <section class="timelineContainer">
+    <section class="timelineContainer" id="employment-history">
       <h2 class="fade-in">Employment History</h2>
       <div class="timeline">
         <ul>
@@ -417,17 +535,22 @@
               <div class="timeline-content-header">
                 <h6 class="date">Nov 2018 - Dec 2021</h6>
                 <h1>Philips Respironics - Respiratory Drug Delivery</h1>
-                 <h6 class="company-address">Chichester Business Park, City Fields Way, Tangmere, Chichester, PO20 2FT</h6>                                         
-                <hr>    
-              </div> 
-              <h3 class="jobRole">Graduate Laboratory Technician</h3>            
-                <p class="jobResponsibilities">
-                      Testing of drug delivery devices (nebulisers/inhalers) to determine their performance characteristics.
-                    </p>
-                <p class="jobResponsibilities">
-                  Conducting general microbiological and protein analysis testing (Cleaning and Disinfection Validation) studies on medical devices.
-                </p>
-
+                <h6 class="company-address">
+                  Chichester Business Park, City Fields Way, Tangmere,
+                  Chichester, PO20 2FT
+                </h6>
+                <hr />
+              </div>
+              <h3 class="jobRole">Graduate Laboratory Technician</h3>
+              <p class="jobResponsibilities">
+                Testing of drug delivery devices (nebulisers/inhalers) to
+                determine their performance characteristics.
+              </p>
+              <p class="jobResponsibilities">
+                Conducting general microbiological and protein analysis testing
+                (Cleaning and Disinfection Validation) studies on medical
+                devices.
+              </p>
             </div>
           </li>
           <li>
@@ -435,15 +558,21 @@
               <div class="timeline-content-header">
                 <h6 class="date">Jan 2017 - Sept 2017</h6>
                 <h1>OneScientific</h1>
-                <h6 class="company-address">Unit 3, Avon Riverside Estate, Victoria Rd, Avonmouth, Bristol BS11 9DB</h6>                                         
-                <hr>    
-              </div> 
-              <h3 class="jobRole">Laboratory Technician</h3>            
+                <h6 class="company-address">
+                  Unit 3, Avon Riverside Estate, Victoria Rd, Avonmouth, Bristol
+                  BS11 9DB
+                </h6>
+                <hr />
+              </div>
+              <h3 class="jobRole">Laboratory Technician</h3>
               <p class="jobResponsibilities">
-                Working in a UKAS accredited (ISO17025) laboratory relating to food safety of supermarket food, drink and dairy and the prevention of microbiological contamination.
+                Working in a UKAS accredited (ISO17025) laboratory relating to
+                food safety of supermarket food, drink and dairy and the
+                prevention of microbiological contamination.
               </p>
               <p class="jobResponsibilities">
-                Using Laboratory Information Managements System (LIMS) for data entry and analysis
+                Using Laboratory Information Managements System (LIMS) for data
+                entry and analysis.
               </p>
             </div>
           </li>
@@ -452,51 +581,94 @@
               <div class="timeline-content-header">
                 <h6 class="date">Aug 2015 - Sept 2015</h6>
                 <h1>Royal Borough of Kensington and Chelsea Council</h1>
-                <h6 class="company-address">Hornton St, London W8 7NX</h6>                                         
-                <hr>    
-              </div> 
-              <h3 class="jobRole">Housing Administrative Assistant</h3>            
+                <h6 class="company-address">Hornton St, London W8 7NX</h6>
+                <hr />
+              </div>
+              <h3 class="jobRole">Housing Administrative Assistant</h3>
               <p class="jobResponsibilities">
-                Performing manual and digital record data checking of case files for accuracy and assisting with archiving.
+                Performing manual and digital record data checking of case files
+                for accuracy and assisting with archiving.
               </p>
-          <p class="jobResponsibilities">
-            Performing extensive data entry and checks to agreed timelines
-          </p>
+              <p class="jobResponsibilities">
+                Performing extensive data entry and checks to agreed timelines.
+              </p>
             </div>
           </li>
         </ul>
       </div>
     </section>
-
+    <section class="education_container" id="education">
+      <h2>Education</h2>
+      <table class="educationTable">
+        <thead>
+          <tr>
+            <th>Qualification</th>
+            <th>Grade</th>
+            <th>Institution</th>
+            <th>Dates</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>BSc (Hons) Biology</td>
+          <td>2:1</td>
+          <td>University of Gloucestershire</td>
+          <td>Sept 2015 - May 2018</td>
+        </tr>
+        <tr>
+          <td>Level 3 Software Development Bootcamp</td>
+          <td>TBC</td>
+          <td>JustIT</td>
+          <td>Nov 2021 - Mar 2022</td>
+        </tr>
+      </table>
+      <div class="educationText">
+        <hr />
+        <p>BSc (Hons) Biology - (2.1)</p>
+        <p>
+          University of Gloucestershire - <span>(Sept 2015 - May 2018)</span>
+        </p>
+        <hr />
+        <p>Level 3 Software Development Bootcamp (Grade TBC)</span></p>
+        <p>JustIT - <span>(Nov 2021 - Mar 2022)</span></p>
+        <hr />
+      </div>
+    </section>
     <footer id="contact-me">
       <h2 class="contactMeTitle">Contact me</h2>
       <div class="formContainer">
-        <form action="https://formspree.io/f/moqrezzv" method="POST" id="my-form">
-
+        <form
+          action="https://formspree.io/f/moqrezzv"
+          method="POST"
+          id="my-form"
+        >
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required >
+            <input type="text" id="firstName" name="firstName" required />
           </div>
 
           <div class="form-group">
             <label for="lastName"> Last Name</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" name="lastName" required />
           </div>
 
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required />
           </div>
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea type="text" id="message" name="message" required></textarea>
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              required
+            ></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
       </div>
       <p id="my-form-status"></p>
-      
     </footer>
 
     <script src="/src/script.js"></script>
