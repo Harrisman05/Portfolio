@@ -36,13 +36,23 @@ nav {
   justify-content: space-between;
 }
 
+nav a {
+  color: rgb(255, 94, 0);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(255, 168, 118);
+}
+
 .navItems {
-  /* width: 400px; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 20px;
   gap: 2rem;
-  margin: 10px;
+  margin: 15px;
+  width: 100%;
 }
 
 ul.show {
@@ -127,8 +137,8 @@ hr {
 
 .socials {
   margin-bottom: 200px;
-  margin-right: 1vw;
-  background-color: #aeb2db;
+  margin-right: 20px;
+  background-color: #caa7a7;
   color: #12152e;
   border-radius: 10px;
   padding: 0.4vw;
@@ -139,6 +149,7 @@ hr {
 
 .icons {
   width: 100%;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -164,7 +175,19 @@ hr {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1100px) {
+  .socials {
+    bottom: 0;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navItems {
+    flex-wrap: wrap;
+    font-size: 3vw;
+  }
+
   .webDevImg {
     display: none;
   }
@@ -178,10 +201,14 @@ hr {
   }
 
   .socials {
-    top: 2.5%;
-    right: 42%;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     margin: 0;
+    width: 150px;
+    height: 78px;
   }
 }
 
@@ -197,6 +224,7 @@ hr {
 
 .logo {
   color: rgb(255, 94, 0);
+
   font-size: 60px;
   font-family: "Courgette", cursive;
   margin-left: 20px;
@@ -376,10 +404,6 @@ hr {
   color: #000;
 }
 
-.hamburger {
-  display: none;
-}
-
 .projectOverview {
   padding: 0 20px 0 20px;
   position: relative;
@@ -390,7 +414,6 @@ hr {
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  /* overflow: hidden; */
   background-color: #eff5ff;
   text-align: left;
   margin-top: 5px;
@@ -482,21 +505,6 @@ hr {
 
 .accordion_input:checked ~ .accordion_label::after {
   transform: translateY(-50%) rotate(0.5turn);
-}
-
-@media only screen and (max-width: 1000px) {
-  .hamburger {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    margin-right: 5vw;
-  }
-
-  .navItems {
-    display: none;
-  }
 }
 
 .timelineContainer {
@@ -655,15 +663,17 @@ hr {
   }
 }
 
-#education {
+#educationAndAchievements {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
-#education h2 {
+#educationAndAchievements h2 {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .educationTable {
@@ -682,6 +692,58 @@ td {
   padding: 10px;
   text-align: center;
   margin: 10px 0;
+}
+
+.educationTable th {
+  background-color: rgb(255, 220, 220);
+}
+
+.allAchievements {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 792.438px;
+  border: 1px black solid;
+  background-color: #eff5ff;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.qekImgIcons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.qekImgIcons .pptIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.qekImgIcons a {
+  text-decoration: none;
+  color: black;
+  width: 160px;
+}
+
+.qekContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.qekContainer p {
+  margin-bottom: 5px;
+}
+
+.qekContainer:hover {
+  border: 1px solid #d24625;
 }
 
 @media only screen and (max-width: 430px) {

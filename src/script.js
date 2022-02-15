@@ -1,14 +1,5 @@
 "use strict;";
 
-const hamburgerButton = document.getElementById("hamburger");
-const navList = document.getElementById("nav-list");
-
-function toggleButton() {
-  navList.classList.toggle("show");
-}
-
-hamburgerButton.addEventListener("click", toggleButton);
-
 // Type Carosel
 
 const TypeWriter = function (txtElement, words, wait = 3000) {
