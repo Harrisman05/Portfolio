@@ -491,6 +491,13 @@ hr {
   justify-content: center;
 }
 
+.accordion_input:checked ~ .accordion_content .languages_description p {
+  position: relative;
+  top: 10px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
 .accordion_input:checked ~ .accordion_content .languages_description > span {
   position: relative;
   top: 10px;
