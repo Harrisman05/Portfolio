@@ -166,23 +166,19 @@ hr {
 
   .webDevImg {
     bottom: 15%;
-    /* bottom: 10%; */
   }
 
   .labImg {
     bottom: 15%;
-    /* bottom: 10%; */
   }
-}
 
-@media only screen and (max-width: 1100px) {
   .socials {
-    bottom: 0;
-    margin-bottom: 70px;
+    right: -20%;
+    bottom: -260%;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .navItems {
     flex-wrap: wrap;
     font-size: 3vw;
@@ -200,13 +196,15 @@ hr {
     flex-wrap: wrap;
   }
 
+  .heroText {
+    gap: 5vh;
+  }
+
   .socials {
-    bottom: 0;
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
+    align-self: center;
+    margin-right: 0;
     display: flex;
-    margin: 0;
     width: 150px;
     height: 78px;
   }
@@ -398,6 +396,7 @@ hr {
   box-shadow: 5px 5px 20px grey;
   margin: 20px;
   background-color: #eff5ff;
+  align-self: flex-start;
 }
 
 .projectCard h3 {
