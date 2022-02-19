@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shootout Summary</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Smooch&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="titleContainer">
-      <h1>Shootout - Project Overview</h1>
+    <div class="pageContainer">
+      <section class="videoSection">
+        <h1>Shootout - Demonstration</h1>
+        <p>
+          Currently, pygame applications cannot be integrated into web pages.
+          Below is an sample video of Shootout running as a browser application.
+        </p>
+        <div class="videoWrapper">
+          <video
+            id="video"
+            playsinline
+            autoplay
+            muted
+            loop
+            src="shootout_playthrough.mp4"
+          ></video>
+        </div>
+      </section>
     </div>
   </body>
 </html>

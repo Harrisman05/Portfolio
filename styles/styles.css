@@ -174,7 +174,7 @@ hr {
 
   .socials {
     right: -20%;
-    bottom: -260%;
+    bottom: ;
   }
 }
 
@@ -194,10 +194,13 @@ hr {
 
   .heroArea {
     flex-wrap: wrap;
+    margin-right: 0;
+    width: 100%;
   }
 
   .heroText {
     gap: 5vh;
+    margin-left: 0;
   }
 
   .socials {
