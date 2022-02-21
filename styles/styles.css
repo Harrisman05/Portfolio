@@ -951,3 +951,12 @@ button[type="submit"]:hover {
 .references a:hover {
   text-decoration: underline;
 }
+
+.top {
+  text-decoration: none;
+  color: white;
+}
+
+.top:hover {
+  text-decoration: underline;
+}
