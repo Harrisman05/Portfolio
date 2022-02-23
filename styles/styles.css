@@ -323,6 +323,7 @@ hr {
 .projectsContainer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project-link {
@@ -423,13 +424,6 @@ hr {
 }
 
 /* responsiveness for project cards */
-
-@media only screen and (max-width: 1000px) {
-  .projectsContainer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 
 .projectCard {
   width: 300px;
