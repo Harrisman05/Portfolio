@@ -8,13 +8,14 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-.pageContainer {
+.overviewContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 40px;
   background-color: rgb(231, 255, 255);
-  height: 100vh;
+  height: 80vh;
+  border-bottom: 3px solid black;
 }
 
 .videoSection {
@@ -46,4 +47,50 @@ body {
   transform: translate(-50%, -50%);
   height: 100%;
   width: 80%;
+}
+
+.compileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.compileContainer h1 {
+  margin: 20px 0 20px 0;
+}
+
+.compileSubcontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  border-top: 3px dashed black;
+  padding: 10px;
+  max-width: 770px;
+}
+
+.compileSubcontainer img {
+  max-width: 90%;
+  height: auto;
+}
+
+.compileSubcontainer ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.compileSubcontainer ul li {
+  padding: 10px;
+}
+
+.compileSubcontainer ul li span {
+  font-weight: bold;
+}
+
+.NSIScontainer {
+  border-bottom: 3px dashed black;
+  margin-bottom: 30px;
 }

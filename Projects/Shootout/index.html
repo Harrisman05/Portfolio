@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="pageContainer">
+    <div class="overviewContainer">
       <section class="videoSection">
         <h1>Shootout - Demonstration</h1>
         <p>
@@ -30,6 +30,70 @@
           ></video>
         </div>
       </section>
+    </div>
+    <div class="compileContainer">
+      <h1>How the game is compiled and runs on desktop</h1>
+      <div class="compileSubcontainer pyinstallerCmdCompileContainer">
+        <h3>
+          Using Pyinstaller to bundle the animation file into an executable
+        </h3>
+        <img src="pyinstaller_game_compilation.png" alt="" />
+        <p>
+          Pyinstaller is used to bundle a Python application and all of it's
+          dependencies into a single package.
+        </p>
+        <ul>
+          <li>
+            <span>--onefile flag:</span> Ensures that the program is compiled
+            into one file
+          </li>
+          <li>
+            <span>--w flag:</span> ensures any python printed to console is not
+            visible when executes the file
+          </li>
+          <li>
+            <span>--i flag:</span> Makes the icon of the execution file a
+            specfic image
+          </li>
+        </ul>
+      </div>
+      <div class="compileSubcontainer compiledExecutableAndGameContainer">
+        <h3>Running the executable file from File Explorer</h3>
+        <img src="compiled_file_and_game.png" alt="" />
+        <p>
+          Once Pyinstaller compiles the game into an executable, a build and
+          dist folder is created.
+        </p>
+        <p>
+          The user can run the game without Python being installed on their
+          operating system
+        </p>
+        <ul>
+          <li>
+            <span>animation:</span> When double-clicked, this file will load up
+            the game, as displayed in the image above
+          </li>
+          <li>
+            The animation file must be in the same directory as all the
+            dependancies, otherwise it will not be able to load in the assets
+          </li>
+        </ul>
+      </div>
+      <div class="compileSubcontainer NSIScontainer">
+        <h3>
+          Compressing the whole project into a single application for download
+          or transfer
+        </h3>
+        <img src="post_NSIS.png" alt="" />
+        <p>
+          NSIS can be used to to compress a zip file of the the whole project
+          folder into a single application.
+        </p>
+        <p>
+          This single application can then be either directly downloaded or sent
+          to users to install on their operating system and play the game.
+        </p>
+      </div>
     </div>
   </body>
 </html>
