@@ -572,11 +572,26 @@ hr {
   text-align: center;
 }
 
+.timelineContainer p {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.timelineContainer p a {
+  text-decoration: none;
+  color: #0000ee;
+}
+
+.timelineContainer p a:hover {
+  text-decoration: underline;
+}
+
 .timeline {
   width: 80%;
   height: auto;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto 20px auto;
   position: relative;
 }
 
