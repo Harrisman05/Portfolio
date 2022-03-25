@@ -812,7 +812,7 @@ td {
   border: 1px solid #d24625;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 600px) {
   .educationTable {
     display: none;
   }
